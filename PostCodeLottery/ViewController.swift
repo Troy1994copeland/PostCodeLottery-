@@ -17,13 +17,32 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         let loginButton : FBSDKLoginButton = FBSDKLoginButton()
         loginButton.readPermissions = ["email", "user_birthday", "public_profile"]
         
-        //loginButton = LoginButton(readPermissions: [ .PublicProfile, .Email, .UserFriends ])
-        
         view.addSubview(loginButton)
         loginButton.frame = CGRect(x: 16, y: 50, width: view.frame.width - 32, height: 50)
         
         loginButton.delegate = self
+        
+        if (FBSDKAccessToken.current()) != nil {
+        fetchProfile()
+        }
     }
+    
+    func fetchProfile() {
+    print("fetchProfile")
+        
+    
+        FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "email"]).start { (connection, result, error) -> Void in
+            
+            if error != nil {
+            print(error!)
+            return
+            }
+            
+            if let email = (result as AnyObject)["email"] as? String {
+            print(email)
+            }
+    }
+}
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         print("Did log out of facebook")
@@ -37,6 +56,8 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         
         print("Successfully logged in with facebook")
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
