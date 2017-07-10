@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		533A70191F0E6943000DBA3D /* PostCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533A70181F0E6943000DBA3D /* PostCodeVC.swift */; };
 		535FB8A11F0A91FB006E7D98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535FB8A01F0A91FB006E7D98 /* AppDelegate.swift */; };
 		535FB8A31F0A91FB006E7D98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535FB8A21F0A91FB006E7D98 /* ViewController.swift */; };
 		535FB8A61F0A91FB006E7D98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535FB8A41F0A91FB006E7D98 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		533A70181F0E6943000DBA3D /* PostCodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCodeVC.swift; sourceTree = "<group>"; };
 		535FB89D1F0A91FB006E7D98 /* PostCodeLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostCodeLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		535FB8A01F0A91FB006E7D98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		535FB8A21F0A91FB006E7D98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			children = (
 				535FB8A01F0A91FB006E7D98 /* AppDelegate.swift */,
 				535FB8A21F0A91FB006E7D98 /* ViewController.swift */,
+				533A70181F0E6943000DBA3D /* PostCodeVC.swift */,
 				535FB8A41F0A91FB006E7D98 /* Main.storyboard */,
 				535FB8A71F0A91FB006E7D98 /* Assets.xcassets */,
 				535FB8A91F0A91FB006E7D98 /* LaunchScreen.storyboard */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				533A70191F0E6943000DBA3D /* PostCodeVC.swift in Sources */,
 				535FB8A31F0A91FB006E7D98 /* ViewController.swift in Sources */,
 				535FB8A11F0A91FB006E7D98 /* AppDelegate.swift in Sources */,
 			);
