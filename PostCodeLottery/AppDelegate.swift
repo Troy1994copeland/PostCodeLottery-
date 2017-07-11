@@ -17,7 +17,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-       FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        let layout = UICollectionViewFlowLayout()
+        window?.rootViewController =
+        UINavigationController(rootViewController: BonusPageVC(collectionViewLayout: layout))
+        
+        UINavigationBar.appearance().barTintColor = UIColor.blue
+        
+        
+        application.statusBarStyle = .lightContent
+        
+        let statusBarBackgbroundView = UIView()
+        statusBarBackgbroundView.backgroundColor = UIColor.blue
+        
+        window?.addSubview(statusBarBackgbroundView)
+        window?.addConstraintsWithFormat("H:|[v0]|", views: statusBarBackgbroundView)
+        window?.addConstraintsWithFormat("V:|[v0(20)]|", views: statusBarBackgbroundView)
+        
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
         return true
     }

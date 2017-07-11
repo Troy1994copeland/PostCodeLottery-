@@ -13,6 +13,8 @@
 		535FB8A61F0A91FB006E7D98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535FB8A41F0A91FB006E7D98 /* Main.storyboard */; };
 		535FB8A81F0A91FB006E7D98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 535FB8A71F0A91FB006E7D98 /* Assets.xcassets */; };
 		535FB8AB1F0A91FB006E7D98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535FB8A91F0A91FB006E7D98 /* LaunchScreen.storyboard */; };
+		53ECEE041F13A703006A6597 /* BonusPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECEE031F13A703006A6597 /* BonusPageVC.swift */; };
+		53ECEE0A1F14EA2E006A6597 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECEE091F14EA2E006A6597 /* MenuBar.swift */; };
 		CE2E17A6BDF8094BCA9CF9D0 /* Pods_PostCodeLottery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC45295F8D3571BB4A7670D0 /* Pods_PostCodeLottery.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		535FB8A71F0A91FB006E7D98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		535FB8AA1F0A91FB006E7D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		535FB8AC1F0A91FB006E7D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53ECEE031F13A703006A6597 /* BonusPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonusPageVC.swift; sourceTree = "<group>"; };
+		53ECEE091F14EA2E006A6597 /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		58B9D5DAE1EEB3E754082086 /* Pods-PostCodeLottery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostCodeLottery.release.xcconfig"; path = "Pods/Target Support Files/Pods-PostCodeLottery/Pods-PostCodeLottery.release.xcconfig"; sourceTree = "<group>"; };
 		C4B35EE4040AB2F976CA7A7B /* Pods-PostCodeLottery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostCodeLottery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PostCodeLottery/Pods-PostCodeLottery.debug.xcconfig"; sourceTree = "<group>"; };
 		FC45295F8D3571BB4A7670D0 /* Pods_PostCodeLottery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostCodeLottery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +70,8 @@
 				535FB8A01F0A91FB006E7D98 /* AppDelegate.swift */,
 				535FB8A21F0A91FB006E7D98 /* ViewController.swift */,
 				533A70181F0E6943000DBA3D /* PostCodeVC.swift */,
+				53ECEE031F13A703006A6597 /* BonusPageVC.swift */,
+				53ECEE091F14EA2E006A6597 /* MenuBar.swift */,
 				535FB8A41F0A91FB006E7D98 /* Main.storyboard */,
 				535FB8A71F0A91FB006E7D98 /* Assets.xcassets */,
 				535FB8A91F0A91FB006E7D98 /* LaunchScreen.storyboard */,
@@ -216,8 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				533A70191F0E6943000DBA3D /* PostCodeVC.swift in Sources */,
+				53ECEE041F13A703006A6597 /* BonusPageVC.swift in Sources */,
 				535FB8A31F0A91FB006E7D98 /* ViewController.swift in Sources */,
 				535FB8A11F0A91FB006E7D98 /* AppDelegate.swift in Sources */,
+				53ECEE0A1F14EA2E006A6597 /* MenuBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
